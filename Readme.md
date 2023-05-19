@@ -59,6 +59,9 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Consultar históricos de Commits
   $ git log
 
+  # Consulta referencia de Head log commits
+  $ git reflog
+
   # Criar tags repo. local
   $ git tag v.1.1
   # Antes, tem que subir os ultimos commits
