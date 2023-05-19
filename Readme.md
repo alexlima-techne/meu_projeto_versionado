@@ -55,9 +55,7 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   $ git merge 
   # Antes usar o comando fetch, para atualizar posição do ponteiro no branch.
 
-  # Consultar Branch local
-  $ git branch
-
+  
   # Consultar históricos de Commits
   $ git log
 
@@ -68,8 +66,18 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Subir atualização de tag. para repo.(remoto) Origem
   $ git push --tags
 
+  # Criar Branch através de Repo.local
+  $ git branch feature/atualizacao_template 
 
-  # 
+  # Consultar uma branch local
+  $ git branch
+
+  # Deletar ( apagar) branch local
+  $ git branch -D feature/atualizacao_template
+
+  # Para acessar uma branch
+  $ git checkout feature/update_template
+
 
 ```
  
