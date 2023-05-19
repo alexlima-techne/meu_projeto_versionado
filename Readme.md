@@ -55,6 +55,9 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Consultar Branch local
   $ git branch
 
+  # Consultar Histoicos de Commits
+  $ git log
+
 ```
  
 
