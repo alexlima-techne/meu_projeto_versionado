@@ -34,6 +34,9 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   
   # Executar um commit de arquivos
   $ git commit -m "Meu primeiro Commit"
+
+  # Enviar os Commit's do repo. local para repo. Remoto (origem).
+  $ git push
    
   # Retornar alguma nova mudança feitas no arquivo repo. local
   $ git checkout -- index.html
@@ -55,11 +58,18 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Consultar Branch local
   $ git branch
 
-  # Consultar Históricos de Commits
+  # Consultar históricos de Commits
   $ git log
 
-  # Criar tags
-  $ git log
+  # Criar tags repo. local
+  $ git tag v.1.1
+  # Antes, tem que subir os ultimos commits
+
+  # Subir atualização de tag. para repo.(remoto) Origem
+  $ git push --tags
+
+
+  # 
 
 ```
  
