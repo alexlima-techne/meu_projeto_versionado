@@ -78,6 +78,9 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Para acessar uma branch
   $ git checkout feature/update_template
 
+  # fazer Merge de branch local para  branch Master(principal) origin.
+  $ git merge feature/update_template
+  # Nota: para atualizar Git Remoto Repo. Origin,  execute comando $git push.
 
 ```
  
