@@ -1,5 +1,5 @@
 <!----- Configurations ---------------------------->
- ## 📌 Anotações - Curso treinamento GitHub FSW - Time : 
+ ## 📌 Anotações Treinamento Curso GitHub - time FSW  : 
 
 Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, o repositorio onde estou acessando o projeto na conta Git-trabalho, acessar pelo navegador **_https://github.com/alexlima-techne_** 
 
@@ -55,7 +55,10 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Consultar Branch local
   $ git branch
 
-  # Consultar Histoicos de Commits
+  # Consultar Históricos de Commits
+  $ git log
+
+  # Criar tags
   $ git log
 
 ```
