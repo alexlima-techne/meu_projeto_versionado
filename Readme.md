@@ -53,7 +53,16 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Consultar credenciais do usuario e senha salvo local.
   # Este arquivo é oculto e local, não deve compartilhar.
   $ vi .git-credentials
-  
 
+  # Consultar se existe um repository Origem - Nuvem(github)
+  $ git remote -v
+
+  # Consultar se existe um repository Origem - Nuvem
+  $ git remote add origin https://github.com/alexlima-techne/meu_projeto_versionado.git
+  #Nota: Caso tenha configurado mais key ssh. adicionar SSH com nome origem
+  #Exemplo: 
+  # Ajustar de "git@github.com:alexlima-techne/meu_projeto_versionado.git" 
+  # para "git remote add origin git@github.com-trabalho:alexlima-techne/meu_projeto_versionado.git"
+ 
 ```
 #
