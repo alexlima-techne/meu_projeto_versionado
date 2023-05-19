@@ -38,12 +38,25 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Retornar alguma nova mudança feitas no arquivo repo. local
   $ git checkout -- index.html
 
-   # Atualizar branch do repo.local com as atualizaçãoes Repo. Origen.
+  # Atualizar branch do repo.local com as atualizaçãoes Branch Repo. Origen.
   $ git pull
+  # Nota: este comando tem as mesmas funções que "git fech" e "git merge".
 
+  # Atualizar o ponteiro branch (origem) com branch (local).
+  $ git fetch
+  # Nota 1: Quando fizer uma atualização do seu arquivo github-Origem, vai ajustar 
+  # a branch local, contudo vale usar o comand. git merge para atualizar arquivos.
+  # Nota 2: Serve para informar estado atual das branchs.
+   
+  # Fazer o merge de arquivo di repo.(origem) para repo.local
+  $ git merge 
+  # Antes usar o comando fetch, para atualizar posição do ponteiro no branch.
+
+  # Consultar Branch local
+  $ git branch
 
 ```
-
+ 
 
 ##  ⚙- Configurações GitHub
 
