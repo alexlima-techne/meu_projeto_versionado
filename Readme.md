@@ -85,6 +85,12 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   $ git merge feature/update_template
   # Nota: para atualizar Git Remoto Repo. Origin,  execute comando $git push.
 
+  # Criar nova branch, copia base de outra branch - local.
+  $ git checkout -b feature/nova_branch
+  # Nota: utilizado no momento que faz o merge(master) e pega estado atual mais recente.
+
+
+
 ```
  
 
