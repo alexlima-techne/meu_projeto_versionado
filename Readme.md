@@ -38,6 +38,9 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Retornar alguma nova mudança feitas no arquivo repo. local
   $ git checkout -- index.html
 
+   # Atualizar branch do repo.local com as atualizaçãoes Repo. Origen.
+  $ git pull
+
 
 ```
 
@@ -64,5 +67,8 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Ajustar de "git@github.com:alexlima-techne/meu_projeto_versionado.git" 
   # para "git remote add origin git@github.com-trabalho:alexlima-techne/meu_projeto_versionado.git"
  
+  # Clonar um repositorio repository Origen(gitHub) para repository local.
+  # Dica: https://github.com/git-tips/tips - exemplos comandos github.
+  $ git clone https://github.com/git-tips/tips.git
 ```
 #
