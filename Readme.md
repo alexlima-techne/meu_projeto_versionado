@@ -106,6 +106,30 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Nota 01: Este cenario ocorre pois a  branchA, foi criada local, e não existia atualizada na Repo.origin.
   # Nota 02: A branchB, foi criada na Repo.origin e não existia no Repo.local, contudo feito o rebase pegou atualizações da mesma e aplicados na atual branchA.
 
+  # Escolho um determinado commit especifico, e trago para meu repo.local
+  $ git cherry-pick feature/mudancas e70da842ece081cda02e3d679fad15374a364080
+  # Nota: deve informar a branch e o codigo key commit, que esta no repo.origin(remoto).
+
+  # Voltar commits, para um ponto especifico na branch
+  $ git reset 71d13481d768b66148bd1354e04440ed4a96bc12
+  # Nota: Atenção pois este comando ira excluir arquivos novos da sua branch,a partir de uma codigo key rash do comite escolhido.
+  # Obs: Arquivos alterados retorna para staged para commit, podendo ajustalos ou commitar novamente
+  # caso quiser limpar tudo usar "$ git checkout -- ."
+
+  # Para Limpar todos arquivos que deseja eliminar,  alterações de arquivos na branch local
+  $ git checkout -- . 
+
+  # Para limpar arquivos de branch, deletar mesmo que permaneção algum difenentes
+  $ git clean -f
+  # Nota: Atenção - apaga arquivos na branch, não tem opção de restaurar.
+
+  # Para atualizar Push - Force, atualizar mesmo quano commits, estão atras da sua branch local
+  $ git push -f
+  # Nota: Atualizo a branch local, mesmo que esteja com commits atraz da branch (master-principal).
+
+  # Para apagar os commits e historico dos ultimos 2 commits
+  $ git reset HEAD~2
+  # Nota: Head~2 - apago os 2 ultimos commits, mantendo o anterior.
 ```
  
 
