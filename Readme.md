@@ -130,6 +130,19 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Para apagar os commits e historico dos ultimos 2 commits
   $ git reset HEAD~2
   # Nota: Head~2 - apago os 2 ultimos commits, mantendo o anterior.
+ 
+  # Guardar um Estado de copia do arquivo, para commitar depois
+  $ git stash
+  # Nota 01: Ser for arquivo novo, é necessario antes adicionar arquivo, então usar $ git Add .
+  # Nota 02: Funciona como uma pilha de salvamento então segue seguencia.
+  # Dica: usando para quando quer manter um estado de alteração do arquivo caso precisar retornar depois ao ponto de alteração.
+
+  # Para consultar lista de Stash, guardados
+  $ git stash list
+
+  # Para voltar alteração o ultim stash da pilha de salvamento
+  $ git stash pop
+
 ```
  
 
