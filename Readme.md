@@ -87,9 +87,24 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
 
   # Criar nova branch, copia base de outra branch - local.
   $ git checkout -b feature/nova_branch
-  # Nota: utilizado no momento que faz o merge(master) e pega estado atual mais recente.
+  # Nota: utilizado no momento que faz o merge(master) e pega estado branch atual mais recente.
 
+  # Fazer Atualização Branch(master-Principal), quando teve commits de outras branches
+  $ git rebase master 
+  # Nota: Após é necessario fazer o "$ git checkout master", em sequida "$ git pull", vai atualizar os arquivo da origem para o repo. local.
+  # Dica: Utilizado quando teve alteração de mesmo arquivo em outra branch, contudo a sua,
+  # ficou desatualizado e pode ocorrer conflito ao fazer o merge na branch(master).
 
+  # Fazer correção Rebase
+  $ git rebase --continue
+  # Nota: Antes, faça a correção do arquivo, em seguida "$ git add.", execute novamente o rebase.
+  # [ i ] - para texto commit, [ ESC ] - sair modo edição, [ :x ] Salvar commit.
+  # Apos  pode fazer "$ git push", para atualizar de branch local comits de sua branch na origin sem haver conflitos.
+  
+  # Solucionar problemas Push, quando não encontra Branch- Origin Repo.Remoto.
+  $ git push --set-upstream origin feature/branchA
+  # Nota 01: Este cenario ocorre pois a  branchA, foi criada local, e não existia atualizada na Repo.origin.
+  # Nota 02: A branchB, foi criada na Repo.origin e não existia no Repo.local, contudo feito o rebase pegou atualizações da mesma e aplicados na atual branchA.
 
 ```
  
