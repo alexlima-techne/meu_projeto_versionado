@@ -5,7 +5,7 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
 
 <br>
 
-##  💻- Lista Comandos Basicos GitHub
+##  💻- Lista Comandos Git-Bash
 
 ```bash
   # Criar a pasta de um  projeto local
@@ -145,6 +145,40 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
 
 ```
  
+##  💻 - Lista Comandos e Config. Git-Flow
+
+```bash
+  # para consultar os comandos Git Flow
+  $ git flow
+  # Nota: não é possivel usar este comandos sem antes inicializar o repo. git flow.
+
+  # Iniciar e configurar um novo repósitorio local
+  $ git flow init
+  # Nota: Para inicia pode escolher a branch [ master-principal]
+  # em seguida informar qual proximo name (branch) para relese de versão, caso não tiver 
+  # é preciso criar uma nova branch, para isso use:"$ git checkout -b develop", neste caso sera uma feature.
+  # 1 criado a nova branch 'develop', dentro dela inicie o comando 'git flow init' que vai sugerir a mesma.
+  # 2 seram informado padrões de crição :"feature/ bugfiz/ realese/ hotfix/ support" como modelo é só avançar com enter.
+
+  # Iniciar e criar uma nova branch 
+  $ git flow feature start nomebranch
+  # Nota 01: Cria uma banch exemplo: ('$ git checkou -b'), baseada na branch DEVELOP.
+  # Nota 02: Automaticamente renomeia com feature/nomebranch
+  # Nota 03: Passa a usar a nova branch '($ git checkout feature/nomebranch)'
+
+  # Finalizar e faz merge branch 
+  $ git flow feature finish nomebranch
+  # Nota 01: Merge a feature branch: 'nomebranch' dentro da branch DEVELOP, exemplo:('$ git checkout develop') e ('$ git merge nomebranch').
+  # Nota 02: Deleta a feature branch ($ git branch - D feature/nomebranch).
+  # Nota 03: Muda para a develop ('$ git checkout develop').
+
+  # Atualizar e publicar  branch Repo. Origin (Remoto)
+  $ git flow feature publish nomebranch
+  # Nota 01: Criar uma branch remota, exemplo:('$ git push --set-upstream origin feature/nomebranch').
+ 
+
+
+```
 
 ##  ⚙- Configurações GitHub
 
@@ -171,5 +205,6 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Clonar um repositorio repository Origen(gitHub) para repository local.
   # Dica: https://github.com/git-tips/tips - exemplos comandos github.
   $ git clone https://github.com/git-tips/tips.git
+
 ```
 #
