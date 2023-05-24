@@ -159,7 +159,8 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # é preciso criar uma nova branch, para isso use:"$ git checkout -b develop", neste caso sera uma feature.
   # 1 criado a nova branch 'develop', dentro dela inicie o comando 'git flow init' que vai sugerir a mesma.
   # 2 seram informado padrões de crição :"feature/ bugfiz/ realese/ hotfix/ support" como modelo é só avançar com enter.
-
+  
+  ---------------------------------------------------------------------------
   # Iniciar e criar uma nova branch 
   $ git flow feature start nomebranch
   # Nota 01: Cria uma banch exemplo: ('$ git checkou -b'), baseada na branch DEVELOP.
@@ -176,7 +177,7 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   $ git flow feature publish nomebranch
   # Nota 01: Criar uma branch remota, exemplo:('$ git push --set-upstream origin feature/nomebranch').
 
-
+  ---------------------------------------------------------------------------
   # Criar uma Release
   $ git flow release start nomebranch
   #  # Nota 01: Cria uma banch exemplo: ('$ git checkou -b'), baseada na branch DEVELOP.
@@ -194,7 +195,25 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Atualizar e publicar  branch Release Repo. Origin (Remoto)
   $ git flow release publish nomebranch
   # Nota 01: Criar uma branch remota, exemplo:('$ git push --set-upstream origin release/nomebranch').
+  
+  -----------------------------------------------------------------------------
+   # Criar uma rotiFix
+  $ git flow hotfix start nomebranch
+  #  # Nota 01: Cria uma banch exemplo: ('$ git checkou -b'), baseada na branch MASTER.
+  # Nota 02: Automaticamente renomeia com hotfix/nomebranch
+  # Nota 03: Passa a usar a nova branch '($ git checkout hotfix/nomebranch)'
 
+   # Finalizar Uma branch release
+  $ git flow hotfix finish nomebranch
+  # Nota 01: Merge a Release branch: 'nomebranch' dentro da branch MASTER, exemplo:('$ git checkout master') e ('$ git merge nomebranch').
+  # Nota 02: Cria uma tag com o nome hotfix/nomebranch ($ git tag hotfix/nomebranch)
+  # nota 03: Merge a hotfix/nomebranch dentro da branch MASTER ($ git checkout develop) e ($git merge hotfix/nomebranch)
+  # Nota 04: Deleta a hotfix branch ($ git branch - D hotfix/nomebranch).
+  # Nota 05: Muda para a develop ('$ git checkout develop').
+
+  # Atualizar e publicar  branch Release Repo. Origin (Remoto)
+  $ git flow hotfix publish nomebranch
+  # Nota 01: Criar uma branch remota, exemplo:('$ git push --set-upstream origin release/nomebranch').
 
  
 
