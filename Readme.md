@@ -246,5 +246,8 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Dica: https://github.com/git-tips/tips - exemplos comandos github.
   $ git clone https://github.com/git-tips/tips.git
 
+  # Consultar config. usuarios perfil Alias.
+  $ vi ~/.bashrc
+
 ```
 #
