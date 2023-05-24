@@ -175,6 +175,27 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Atualizar e publicar  branch Repo. Origin (Remoto)
   $ git flow feature publish nomebranch
   # Nota 01: Criar uma branch remota, exemplo:('$ git push --set-upstream origin feature/nomebranch').
+
+
+  # Criar uma Release
+  $ git flow release start nomebranch
+  #  # Nota 01: Cria uma banch exemplo: ('$ git checkou -b'), baseada na branch DEVELOP.
+  # Nota 02: Automaticamente renomeia com release/nomebranch
+  # Nota 03: Passa a usar a nova branch '($ git checkout release/nomebranch)'
+
+   # Finalizar Uma branch release
+  $ git flow release finish nomebranch
+  # Nota 01: Merge a Release branch: 'nomebranch' dentro da branch MASTER, exemplo:('$ git checkout master') e ('$ git merge nomebranch').
+  # Nota 02: Cria uma tag com o nome realse/nomebranch ($ git tag release/nomebranch)
+  # nota 03: Merge a Release/nomebranch dentro da branch DEVELOP ($ git checkout develop) e ($git merge release/nomebranch)
+  # Nota 04: Deleta a realse branch ($ git branch - D release/nomebranch).
+  # Nota 05: Muda para a develop ('$ git checkout develop').
+
+  # Atualizar e publicar  branch Release Repo. Origin (Remoto)
+  $ git flow release publish nomebranch
+  # Nota 01: Criar uma branch remota, exemplo:('$ git push --set-upstream origin release/nomebranch').
+
+
  
 
 
