@@ -75,6 +75,9 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Consultar uma branch local
   $ git branch
 
+  # Renomear uma branch
+  $ git branch -m main
+
   # Deletar ( apagar) branch local
   $ git branch -D feature/atualizacao_template
 
