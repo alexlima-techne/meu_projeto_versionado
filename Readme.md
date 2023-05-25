@@ -37,6 +37,7 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
 
   # Enviar os Commit's do repo. local para repo. Remoto (origem).
   $ git push
+  # Nota: caso for primeiro commit, pode usar $ git push -u origin master - u - apelido.
    
   # Retornar alguma nova mudança feitas no arquivo repo. local
   $ git checkout -- index.html
@@ -74,6 +75,10 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
 
   # Consultar uma branch local
   $ git branch
+
+  # Renomear uma branch local
+  $ git branch -m main
+  # Nota: antes de fazer o git push. deve atualizar a branche no repo.Remoto, use "$ git push --set-upstream origin main"
 
   # Deletar ( apagar) branch local
   $ git branch -D feature/atualizacao_template
