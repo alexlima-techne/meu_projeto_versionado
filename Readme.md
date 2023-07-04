@@ -35,6 +35,22 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Executar um commit de arquivos
   $ git commit -m "Meu primeiro Commit"
 
+  # Renomer texto descrição do ultimo commit do repositório local.
+  $ git commit --amend
+  # Nota: vai abrir o editor view, clicar Esc e i - Insert, depois 
+  # edite o texto descrição, clicar Esc e :qw  ou :x - salvar.
+
+
+  # Renomer texto descrição do commit anterior 2° depois do ultimo commit repo. local
+  $ git rebase -i HEAD~2
+  # Nota: vai abrir o editor view, exibir
+  # * pick 0aads - texto - commit anterior 2° depois do ultimo.
+  # * pick 0aadg - texto - Ultimo comit - mais recente.
+  # clique Esc e i - Insert, depois alterar opção "pick" para "reword", do commit anterior
+  # vai abrir o editor view  exibindo a descrição do texto commit anterior
+  # edite o texto descrição, clicar Esc e :qw  ou :x - salvar.
+
+
   # Enviar os Commit's do repo. local para repo. Remoto (origem).
   $ git push
   # Nota: caso for primeiro commit, pode usar $ git push -u origin master - u - apelido.
@@ -251,7 +267,7 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   $ git remote set-url origin git@github.com:alexlima-techne/meu_projeto_versionado.git
   # Nota: neste caso atualizei o endereço do link Url:
   # De    [HTTPS] (Use Git or checkout with SVN using the web URL). 
-  # para  [SSH ]  (Use a password-protected SSH key)....
+  # para  [SSH ]  (Use a password-protected SSH key).
 
   # Clonar um repositorio repository Origen(gitHub) para repository local.
   # Dica: https://github.com/git-tips/tips - exemplos comandos github.
