@@ -247,6 +247,12 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Ajustar de "git@github.com:alexlima-techne/meu_projeto_versionado.git" 
   # para "git remote add origin git@github.com-trabalho:alexlima-techne/meu_projeto_versionado.git"
  
+  # Atualizar o link de um repositorio Origen(gitHub) no repositorio local(gitbash)
+  $ git remote set-url origin git@github.com:alexlima-techne/meu_projeto_versionado.git
+  # Nota: neste caso atualizei o endereço do link Url:
+  # De    [HTTPS] (Use Git or checkout with SVN using the web URL). 
+  # para  [SSH ]  (Use a password-protected SSH key).
+
   # Clonar um repositorio repository Origen(gitHub) para repository local.
   # Dica: https://github.com/git-tips/tips - exemplos comandos github.
   $ git clone https://github.com/git-tips/tips.git
