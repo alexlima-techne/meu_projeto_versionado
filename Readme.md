@@ -38,7 +38,7 @@ Abaixo deixo a lista de comando executados durante o treinamento: **_GitHub_**, 
   # Renomer texto descrição do ultimo commit do repositório local.
   $ git commit --amend
   # Nota: vai abrir o editor view, clicar Esc e i - Insert, depois 
-  # edite o texto descrição, clicar Esc e :qw  ou :x - salvar.
+  # edite o texto descrição, clicar Esc e :wq  ou :x - salvar.
 
 
   # Renomer texto descrição do commit anterior 2° depois do ultimo commit repo. local
